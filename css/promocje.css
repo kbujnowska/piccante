@@ -1,0 +1,317 @@
+body {
+    background: url(../img/drewno6.jpg);
+    position: relative;
+    width: 100vw;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/*MENU*/
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    background-image: url('../img/drewno6.jpg') !important;
+    top: -17%;
+    z-index: 1;
+}
+
+header a img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.nav-item a {
+    color: #FF2600 !important;
+    font-size: 20px;
+    font-family: titillium;
+    text-transform: uppercase;
+    text-align: baseline;
+
+}
+
+.navbar-text-center {
+    margin: auto;
+}
+
+@font-face {
+
+    font-family: titillium;
+    src: url(titillium.ttf);
+}
+
+/*TEXT*/
+main {
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+main h2 {
+    padding-top: 60px;
+    color: #b8860b;
+    font-family: "Playfair Display", serif;
+    display: inline-block;
+    letter-spacing: -2px;
+    font-size: 50px;
+}
+
+.selh2-2 {
+    font-size: 40px;
+    top: 10px;
+    text-transform: uppercase;
+    color: #FF2600;
+    vertical-align: baseline;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+
+/*MAIN-PROMO*/
+
+.row {
+    position: absolute;
+    width: 100vw;
+    height: 300px;
+    top: 320px;
+    text-align: center;
+    margin-top: 85px;
+}
+
+.home-about {
+    background-color: white;
+    margin-left: 100px;
+    height: 400px;
+    top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-about h1 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    color: #FF2600;
+    text-shadow: 0 0 1px #FF2600;
+    animation: shakes 3s infinite linear;
+    font-size: 60px;
+}
+
+.home-about h5 {
+    position: absolute;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #FF2600;
+    font-size: 40px;
+}
+
+.home-about p {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    color: black;
+    font-size: 20px;
+
+}
+
+
+@keyframes shakes {
+    0% {
+        transform: translateX(0)
+    }
+
+    90% {
+        transform: translateX(0)
+    }
+
+    91% {
+        transform: translateX(20px)
+    }
+
+    92% {
+        transform: translateX(-20px)
+    }
+
+    93% {
+        transform: translateX(20px)
+    }
+
+    94% {
+        transform: translateX(-20px)
+    }
+
+    95% {
+        transform: translateX(20px)
+    }
+
+    96% {
+        transform: translateX(-20px)
+    }
+
+    97% {
+        transform: translateX(20px)
+    }
+
+    98% {
+        transform: translateX(-20px)
+    }
+
+    99% {
+        transform: translateX(20px)
+    }
+
+    100% {
+        transform: translateX(-20px)
+    }
+}
+
+
+.home-about1 {
+    background-color: transparent;
+    /* border: solid 1px white; */
+    margin-right: 100px;
+    height: 190px;
+    width: 350px;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.home-about1 img {
+    width: 200px;
+    position: absolute;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.home-about2 {
+    margin-right: 100px;
+    height: 190px;
+    width: 350px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 0 45px #000;
+}
+
+.home-about2 img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+    header {
+        top: -20%;
+    }
+
+    main h2 {
+        padding-top: 10px;
+        font-size: 40px;
+    }
+
+    .home-about {
+        margin-left: 30px;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .home-about h1 {
+        bottom: 5%;
+        right: 10%;
+        font-size: 40px;
+    }
+
+    .home-about h5 {
+        font-size: 20px;
+    }
+
+    .home-about p {
+        top: 30%;
+        font-size: 15px;
+    }
+
+    .home-about1 {
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .home-about2 {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .home-about2 img {
+        width: 100%;
+        margin-left: 5px;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1280px) {
+    .home-about {
+        margin-left: 20px;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .home-about h5 {
+        font-size: 20px;
+    }
+
+    .home-about p {
+        top: 30%;
+        font-size: 20px;
+
+    }
+
+    .home-about h1 {
+        bottom: 5%;
+        right: 10%;
+        font-size: 40px;
+    }
+
+    .home-about1 {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .home-about2 {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .home-about2 img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    .home-about p {
+        font-size: 25px;
+    }
+
+}
